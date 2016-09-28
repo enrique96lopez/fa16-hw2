@@ -7,5 +7,10 @@ class Stringify
   end
 
   def what_am_i
+  	if name.blank? || adjective.blank?
+      "you are nothing"
+    else
+      name.to_s + " is so " + adjective.to_s
   end
+end
 end
